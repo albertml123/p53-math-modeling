@@ -1,0 +1,68 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2183,         57]
+NotebookOptionsPosition[      1941,         44]
+NotebookOutlinePosition[      2285,         59]
+CellTagsIndexPosition[      2242,         56]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"p53", "\[Rule]", "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{"p21", "\[Rule]", "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{"mdm2", "\[Rule]", "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{"Mdmx", "\[Rule]", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{"wip1", "\[Rule]", "0.04"}], "\[IndentingNewLine]", 
+ RowBox[{"ATMp", "\[Rule]", "0"}], "\[IndentingNewLine]", 
+ RowBox[{"P53", "\[Rule]", "0.0258"}], "\[IndentingNewLine]", 
+ RowBox[{"P53p", "\[Rule]", "0"}], "\[IndentingNewLine]", 
+ RowBox[{"P53pp", "\[Rule]", "0"}], "\[IndentingNewLine]", 
+ RowBox[{"P53a", "\[Rule]", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{"P21", "\[Rule]", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{"Mdm2", "\[Rule]", "0.015"}], "\[IndentingNewLine]", 
+ RowBox[{"Mdm2p", "\[Rule]", "0.0178"}], "\[IndentingNewLine]", 
+ RowBox[{"MdmX", "\[Rule]", "0.08"}], "\[IndentingNewLine]", 
+ RowBox[{"MdmXp", "\[Rule]", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{"Wip1", "\[Rule]", "0"}], "\[IndentingNewLine]", 
+ RowBox[{"C1", "\[Rule]", "0.06"}], "\[IndentingNewLine]", 
+ RowBox[{"C2", "\[Rule]", "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{"C3", "\[Rule]", "0.05"}]}], "Input",
+ CellChangeTimes->{{3.673133424814164*^9, 3.673133427208873*^9}, {
+  3.673133681790859*^9, 3.6731337666836214`*^9}, {3.673133813796365*^9, 
+  3.673133826334797*^9}, {3.673133964242135*^9, 3.6731341192067275`*^9}}]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {64, Automatic}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1379, 22, 392, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
+"Edit 1" 
