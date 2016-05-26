@@ -1,0 +1,336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10721,        328]
+NotebookOptionsPosition[      9321,        283]
+NotebookOutlinePosition[      9666,        298]
+CellTagsIndexPosition[      9623,        295]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox["S", 
+   RowBox[{"p53", " "}]], "\[Rule]", " ", "0.0005"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["S", "mdm2"], "\[Rule]", " ", "0.002"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["S", "mdmx"], "\[Rule]", " ", "0.001"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["S", "wip1"], "\[Rule]", " ", "0.002"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["e", "1"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["e", "2"], "\[Rule]", " ", "0.014"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["e", "3"], "\[Rule]", " ", "0.005"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["e", "4"], "\[Rule]", " ", "0.015"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["e", "5"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "p53"], "\[Rule]", " ", "0.017"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "p21"], "\[Rule]", " ", "0.017"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "m"], "\[Rule]", " ", "0.16"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "x"], "\[Rule]", " ", "1.5"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "w"], "\[Rule]", " ", "0.2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Delta]", "p53"], "\[Rule]", " ", 
+  "0.03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Delta]", "p21"], "\[Rule]", " ", 
+  "0.04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Delta]", "mdm2"], "\[Rule]", " ", 
+  "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Delta]", "mdmx"], "\[Rule]", " ", 
+  "0.03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Delta]", "wip1"], "\[Rule]", " ", 
+  "0.05"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["r", "p53"], "\[Rule]", " ", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["r", "p21"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["r", "mdm2"], "\[Rule]", " ", "0.04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["r", "mdmx"], "\[Rule]", " ", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["r", "wip1"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "p53"], " ", "\[Rule]", " ", 
+  "0.03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "p53p"], " ", "\[Rule]", " ", 
+  "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "p53pp"], " ", "\[Rule]", " ", 
+  "0.004"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "p53a"], " ", "\[Rule]", " ", 
+  "0.001"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "p21"], " ", "\[Rule]", " ", 
+  "0.03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "mdm2"], " ", "\[Rule]", " ", 
+  "0.033"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "mdmx"], " ", "\[Rule]", " ", 
+  "0.03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "wip1"], " ", "\[Rule]", " ", 
+  "0.035"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "mdm2p"], " ", "\[Rule]", " ", 
+  "0.1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[Mu]", "mdmxp"], " ", "\[Rule]", " ", 
+  "0.2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "1"], "\[Rule]", " ", "0.2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "2"], "\[Rule]", " ", "0.01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "3"], "\[Rule]", " ", "1.5"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "4"], "\[Rule]", " ", "0.1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "atm1"], "\[Rule]", " ", "0.8"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "atm2"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "atm3"], "\[Rule]", " ", "0.02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "wip1"], "\[Rule]", " ", "1.3"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "wip2"], "\[Rule]", " ", "0.5"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "wip3"], "\[Rule]", " ", "0.2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["k", "wip4"], "\[Rule]", " ", "1.5"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["k", "DSB"], "\[Rule]", " ", "0.0005"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.6731032503163652`*^9, 3.673103263721947*^9}, {
+   3.673103295785731*^9, 3.6731033586744537`*^9}, {3.673104904245261*^9, 
+   3.6731050514733295`*^9}, {3.673285849565693*^9, 3.6732859614564357`*^9}, {
+   3.6732860169398923`*^9, 3.6732861301257477`*^9}, {3.6732867106252337`*^9, 
+   3.6732867803933067`*^9}, 3.6732871673844132`*^9, 3.6732872133766675`*^9, {
+   3.673287306535126*^9, 3.673287386630098*^9}, {3.673287458524011*^9, 
+   3.6732875307120066`*^9}, {3.673287792019623*^9, 3.6732879881480665`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "p53"], "\[Rule]", "0.0005`"}]], "Output",
+ CellChangeTimes->{3.673286094515702*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "mdm2"], "\[Rule]", "0.002`"}]], "Output",
+ CellChangeTimes->{3.673286094516704*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "mdmx"], "\[Rule]", "0.001`"}]], "Output",
+ CellChangeTimes->{3.6732860945182085`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "wip1"], "\[Rule]", "0.002`"}]], "Output",
+ CellChangeTimes->{3.6732860945197124`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "1"], "\[Rule]", "0.02`"}]], "Output",
+ CellChangeTimes->{3.6732860945212336`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "2"], "\[Rule]", "0.014`"}]], "Output",
+ CellChangeTimes->{3.673286094522219*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "3"], "\[Rule]", "0.005`"}]], "Output",
+ CellChangeTimes->{3.6732860945247316`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "4"], "\[Rule]", "0.015`"}]], "Output",
+ CellChangeTimes->{3.673286094526265*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "5"], "\[Rule]", "0.02`"}]], "Output",
+ CellChangeTimes->{3.673286094527734*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["K", "p53"], "\[Rule]", "0.017`"}]], "Output",
+ CellChangeTimes->{3.6732860945297394`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["K", "p21"], "\[Rule]", "0.017`"}]], "Output",
+ CellChangeTimes->{3.6732860945312443`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["K", "m"], "\[Rule]", "0.16`"}]], "Output",
+ CellChangeTimes->{3.6732860945327606`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["K", "x"], "\[Rule]", "1.5`"}]], "Output",
+ CellChangeTimes->{3.6732860945337563`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["K", "w"], "\[Rule]", "0.2`"}]], "Output",
+ CellChangeTimes->{3.673286094535253*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Delta]", "p53"], "\[Rule]", "0.03`"}]], "Output",
+ CellChangeTimes->{3.6732860945367575`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Delta]", "p21"], "\[Rule]", "0.04`"}]], "Output",
+ CellChangeTimes->{3.673286094538262*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Delta]", "mdm2"], "\[Rule]", "0.05`"}]], "Output",
+ CellChangeTimes->{3.6732860945397663`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[Delta]", "mdmx"], "\[Rule]", "0.03`"}]], "Output",
+ CellChangeTimes->{3.6732860945412693`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.6732860860426073`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "p53"], "\[Rule]", "0.0005`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991660404`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "mdm2"], "\[Rule]", "0.002`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "mdmx"], "\[Rule]", "0.001`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "wip1"], "\[Rule]", "0.002`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "1"], "\[Rule]", "0.02`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "2"], "\[Rule]", "0.014`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "3"], "\[Rule]", "0.005`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "4"], "\[Rule]", "0.015`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["e", "5"], "\[Rule]", "0.02`"}]], "Output",
+ CellChangeTimes->{3.6731049067116857`*^9, 3.6731051991816597`*^9}]
+}, Open  ]]
+},
+WindowSize->{776, 705},
+WindowMargins->{{Automatic, -167}, {Automatic, 48}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4834, 117, 972, "Input"],
+Cell[5417, 141, 128, 3, 31, "Output"],
+Cell[5548, 146, 128, 3, 31, "Output"],
+Cell[5679, 151, 130, 3, 31, "Output"],
+Cell[5812, 156, 130, 3, 31, "Output"],
+Cell[5945, 161, 126, 3, 31, "Output"],
+Cell[6074, 166, 125, 3, 31, "Output"],
+Cell[6202, 171, 127, 3, 31, "Output"],
+Cell[6332, 176, 125, 3, 31, "Output"],
+Cell[6460, 181, 124, 3, 31, "Output"],
+Cell[6587, 186, 129, 3, 31, "Output"],
+Cell[6719, 191, 129, 3, 31, "Output"],
+Cell[6851, 196, 126, 3, 31, "Output"],
+Cell[6980, 201, 125, 3, 31, "Output"],
+Cell[7108, 206, 123, 3, 31, "Output"],
+Cell[7234, 211, 135, 3, 31, "Output"],
+Cell[7372, 216, 133, 3, 31, "Output"],
+Cell[7508, 221, 136, 3, 31, "Output"],
+Cell[7647, 226, 136, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7820, 234, 89, 1, 52, "Input"],
+Cell[7912, 237, 154, 3, 31, "Output"],
+Cell[8069, 242, 154, 3, 31, "Output"],
+Cell[8226, 247, 154, 3, 31, "Output"],
+Cell[8383, 252, 154, 3, 31, "Output"],
+Cell[8540, 257, 150, 3, 31, "Output"],
+Cell[8693, 262, 151, 3, 31, "Output"],
+Cell[8847, 267, 151, 3, 31, "Output"],
+Cell[9001, 272, 151, 3, 31, "Output"],
+Cell[9155, 277, 150, 3, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
